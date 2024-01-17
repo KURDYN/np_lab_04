@@ -30,7 +30,10 @@ jobs:
       - name: Display Python version
         run: python --version
         
+      - name: Run python app_zad2.py
+        run: |
+          python $GITHUB_WORKSPACE/np_lab_04/app_zad2.py
+          
       - name: Run flake8
         run: |
-          python app_zad2.py
           flake8
